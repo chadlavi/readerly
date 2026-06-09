@@ -81,4 +81,10 @@ main {
     line-height: 1.2;
     overflow-x: auto;
   }
+
+  img {
+    display: block;
+    margin: var(--p-space) auto;
+    max-width: 100%;
+  }
 }
