@@ -7,39 +7,37 @@
   background-color: rgb(250, 248, 247);
   color: rgb(54, 55, 55);
   --secondary-background: rgb(235, 233, 232);
+  --p-space: calc(1rem + 1px);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: rgb(25, 26, 26);
     color: rgb(209, 205, 201);
-    --secondary-background: rgb(0, 0, 0);
+    --secondary-background: #000;
   }
 }
 
-html,
 body {
   margin: 0;
 }
 
 main {
   max-width: 38rem;
-  margin-inline: auto;
-  margin-block-start: 4rem;
-  margin-block-end: 7rem;
+  margin: 4rem auto 7rem;
   padding-inline: 1rem;
-  line-height: 1.6em;
+  line-height: 1.6;
   overflow-wrap: break-word;
 
   h2 {
     margin-block-start: 3rem;
-    margin-block-end: calc(1rem + 1px);
+    margin-block-end: var(--p-space);
   }
 
   h3,
   h4 {
     margin-block-start: 2rem;
-    margin-block-end: calc(1rem + 1px);
+    margin-block-end: var(--p-space);
   }
 
   p,
@@ -47,7 +45,7 @@ main {
   ol,
   blockquote,
   h5 {
-    margin: calc(1rem + 1px) 0;
+    margin: var(--p-space) 0;
   }
 
   blockquote,
@@ -82,7 +80,6 @@ main {
   }
 
   pre {
-    background-color: var(--secondary-background);
     line-height: 1.2;
     overflow-x: auto;
   }
