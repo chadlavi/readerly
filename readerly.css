@@ -4,16 +4,16 @@
   font-size: 19px;
   font-kerning: auto;
 
-  background-color: rgb(250, 248, 247);
-  color: rgb(54, 55, 55);
-  --secondary-background: rgb(235, 233, 232);
+  background-color: #faf8f7;
+  color: #363737;
+  --secondary-background: #ebe9e8;
   --p-space: calc(1rem + 1px);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: rgb(25, 26, 26);
-    color: rgb(209, 205, 201);
+    background-color: #191a1a;
+    color: #d1cdc9;
     --secondary-background: #000;
   }
 }
@@ -30,14 +30,12 @@ main {
   overflow-wrap: break-word;
 
   h2 {
-    margin-block-start: 3rem;
-    margin-block-end: var(--p-space);
+    margin-block: 3rem var(--p-space);
   }
 
   h3,
   h4 {
-    margin-block-start: 2rem;
-    margin-block-end: var(--p-space);
+    margin-block: 2rem var(--p-space);
   }
 
   p,
