@@ -1,0 +1,86 @@
+:root {
+  font-family: Palatino, serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 19px;
+  font-kerning: auto;
+
+  background-color: rgb(250, 248, 247);
+  color: rgb(54, 55, 55);
+  --secondary-background: rgb(235, 233, 232);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: rgb(25, 26, 26);
+    color: rgb(209, 205, 201);
+    --secondary-background: rgb(0, 0, 0);
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 38rem;
+  margin-inline: auto;
+  margin-block-start: 4rem;
+  margin-block-end: 7rem;
+  padding-inline: 1rem;
+  line-height: 1.6em;
+  overflow-wrap: break-word;
+
+  h2 {
+    margin-block-start: 3rem;
+  }
+
+  h3,
+  h4 {
+    margin-block-start: 2rem;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote {
+    margin: calc(1rem + 1px) 0;
+  }
+
+  blockquote,
+  pre {
+    background-color: var(--secondary-background);
+    padding: 1.5rem 2rem;
+  }
+
+  ul,
+  ol {
+    padding-inline-start: 2rem;
+
+    ul,
+    ol {
+      margin-block: 0;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+
+  code {
+    font-size: 0.875rem;
+    font-family: Monaco, monospace;
+  }
+
+  :not(pre) code {
+    background-color: var(--secondary-background);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+  }
+
+  pre {
+    background-color: var(--secondary-background);
+    line-height: 1.2;
+    overflow-x: auto;
+  }
+}
